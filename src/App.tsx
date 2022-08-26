@@ -24,11 +24,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 
 function App() {
   const [expanded, setExpanded] = React.useState(false);
-  const [notes, setNotes] = React.useState([
-    { id: 1, title: 'Some note', body: 'Test note' },
-    { id: 2, title: 'Any note', body: 'Cool note' },
-    { id: 3, title: 'This note', body: 'Good note' },
-  ])
+  const [notes, setNotes] = React.useState([])
   const [note, setNote] = React.useState({
     title: '', body: ''
   })
