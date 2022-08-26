@@ -1,0 +1,155 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background-color: white;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+
+    .firstGroup {
+        display: flex;
+        margin-left: -5px;
+
+        .burger {
+            width: 50px;
+            height: 50px;
+            color: gray;
+            padding: 0;
+
+            &:hover {
+                background-color: rgba(215, 215, 215, 0.5);
+            }
+
+        }
+
+        .orgname {
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            .logo {
+                padding-right: 5px;
+
+                .logoImg {
+                    width: 44px;
+                    height: 40px;
+                }
+            }
+
+            .name {
+                font-family: 'Product Sans', Arial, sans-serif;
+                font-size: 22px;
+                color: rgba(95, 99, 104, 0.8);
+            }
+        }
+    }
+
+    .searchbar {
+        width: 50%;
+        height: 100%;
+        padding: 11px;
+        display: flex;
+        align-items: center;
+        background-color: rgb(241, 243, 244);
+        border-radius: 8px;
+
+        .searchIcon {
+            width: 40px;
+            height: 40px;
+            margin: 5px 3px 1px 3px;
+            padding: 8px;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgba(215, 215, 215, 0.5);
+            }
+        }
+
+        .search {
+            all: unset;
+            width: 100%;
+            font-size: 16px;
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            color: black;
+        }
+    }
+
+
+    .secondGroup {
+        display: flex;
+
+        .trio {
+            display: flex;
+
+            .refresh,
+            .viewType,
+            .settings {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: rgba(215, 215, 215, 0.5);
+                }
+            }
+        }
+
+        .apps {
+            margin-left: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            padding: 12px;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgba(215, 215, 215, 0.5);
+            }
+        }
+
+        .profile {
+            margin-right: 20px;
+            width: 50px;
+            height: 50px;
+            padding: 6px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            .circle {
+                width: 38px;
+                height: 38px;
+                border-radius: 50%;
+                background-color: rgb(205, 99, 0);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+
+            &:hover {
+                background-color: rgba(215, 215, 215, 0.5);
+            }
+        }
+    }
+}
+
+.drawer {
+    .list {
+        top: 70px;
+    }
+}

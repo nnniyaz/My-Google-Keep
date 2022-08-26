@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+    .Main {
+        width: 100%;
+        min-height: 100vh;
+
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .form {
+                width: 600px;
+                margin-bottom: 20px;
+                margin-top: 40px;
+
+                .input-short {
+                    font-weight: 600;
+                    padding: 15px 18px;
+                    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+                    border-radius: 10px;
+                    display: flex;
+
+                    .textfield {
+                        border: none;
+                        resize: none;
+                        font-size: 16px;
+                        font-weight: 500;
+                        outline: none;
+                    }
+                }
+
+                .input-expanded {
+                    font-weight: 600;
+                    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    // height: 140px;
+
+                    .input {
+                        all: unset;
+                        width: 100%;
+                        outline: none;
+                        padding: 10px 18px;
+                        display: block;
+
+
+                        &::placeholder {
+                            color: #202124d6;
+                        }
+                    }
+
+                    .textfield {
+                        border: none;
+                        resize: none;
+                        font-size: 16px;
+                        font-weight: 500;
+                        padding: 10px 18px;
+                        outline: none;
+                    }
+
+                    .bottom {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 100%;
+
+                        .options {
+                            width: 45%;
+                            display: flex;
+                            justify-content: space-between;
+                            bottom: 10px;
+                            left: 10px;
+                            opacity: 1;
+                            transition-duration: .2s;
+                            padding: 10px 10px;
+
+                            .option {
+                                height: 30px;
+                                width: 30px;
+                                border-radius: 50%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                &:hover {
+                                    background-color: rgba(215, 215, 215, 0.5);
+                                }
+
+                                .icon {
+                                    width: 18px;
+                                    color: black;
+                                }
+                            }
+                        }
+
+                        .btn {
+                            all: unset;
+                            font-size: 15px;
+                            margin-right: 20px;
+                            padding: 5px 20px;
+                            border-radius: 5px;
+
+                            &:hover {
+                                background-color: rgba(215, 215, 215, 0.5);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .card {
+                position: relative;
+                width: 600px;
+                border: 1px solid rgb(224, 224, 224);
+                border-radius: 10px;
+                font-family: 'Roboto', Arial, sans-serif;
+                font-size: 16px;
+                margin: 8px;
+                transition: 0.1s linear;
+
+                .title {
+                    font-size: 17px;
+                    font-weight: 600;
+                    padding: 10px 18px;
+                }
+
+                .text {
+                    padding: 0 18px;
+                }
+
+                &:hover {
+                    box-shadow: rgba(65, 69, 73, 0.3) 0 1px 1px 0, rgba(65, 69, 73, 0.15) 0 1px 3px 1px;
+
+                    .bottom {
+                        .options {
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                .input {
+                    all: unset;
+                    width: 94%;
+                    outline: none;
+                    display: block;
+                    padding: 10px 18px;
+                    font-weight: 500;
+
+                    &::placeholder {
+                        color: #202124d6;
+                    }
+                }
+
+                .textfield {
+                    width: 100%;
+                    border: none;
+                    resize: none;
+                    font-size: 16px;
+                    font-weight: 400;
+                    outline: none;
+                    padding: 10px 18px;
+                    white-space: pre-line;
+                }
+
+                .bottom {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    .options {
+                        width: 45%;
+                        display: flex;
+                        justify-content: space-between;
+                        bottom: 10px;
+                        left: 10px;
+                        opacity: 0;
+                        transition-duration: .2s;
+                        padding: 10px 10px;
+
+                        .option {
+                            height: 30px;
+                            width: 30px;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            &:hover {
+                                background-color: rgba(215, 215, 215, 0.5);
+                            }
+
+                            .icon {
+                                width: 18px;
+                                color: black;
+                            }
+                        }
+                    }
+
+                    .btn {
+                        all: unset;
+                        font-size: 15px;
+                        margin-right: 20px;
+                        padding: 5px 20px;
+                        border-radius: 5px;
+
+                        &:hover {
+                            background-color: rgba(215, 215, 215, 0.5);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

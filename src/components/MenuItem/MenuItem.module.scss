@@ -1,0 +1,13 @@
+.link {
+    cursor: pointer;
+
+    .listItem {
+        &:hover {
+            background-color: rgba(215, 215, 215, 0.5);
+        }
+    }
+}
+
+.icon {
+    margin-left: 4px;
+}
